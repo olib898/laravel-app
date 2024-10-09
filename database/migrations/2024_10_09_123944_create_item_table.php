@@ -12,7 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('items', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('uid')->primary();
+            $table->string('name');
+            $table->string('description');
+            $table->float('price');
+            $table->text('imageURL');
             $table->timestamps();
         });
     }
