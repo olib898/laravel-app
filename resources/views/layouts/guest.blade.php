@@ -18,14 +18,22 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-zinc-100 dark:bg-zinc-900">
-            <div>
+        <div class="min-h-screen sm:justify-center items-center pt-6 sm:pt-0 bg-zinc-100 dark:bg-zinc-900">
+            <div class="w-100 flex justify-between p-6">
                 <a href="/">
                     <h1 class="text-gray-900 dark:text-white text-xl"> Oli Burnside</h1>
                 </a>
+                <div class="inline-flex gap-6">
+                    <a href="/login" class="text-gray-900 dark:text-white hover:text-gray-700 hover:dark:text-gray-300">
+                        <h1> Login</h1>
+                    </a>
+                    <a href="/register" class="text-gray-900 dark:text-white hover:text-gray-700 hover:dark:text-gray-300">
+                        <h1>Register</h1>
+                    </a>
+                </div>
             </div>
 
-            <div class="w-full mt-6 px-6 py-6 bg-white dark:bg-zinc-800 shadow-md overflow-hidden">
+            <div class="mt-6 px-6 py-6 bg-white dark:bg-zinc-800 shadow-md overflow-hidden rounded-xl container mx-auto">
                 {{ $slot }}
             </div>
         </div>

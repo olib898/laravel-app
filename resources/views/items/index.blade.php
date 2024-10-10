@@ -29,9 +29,9 @@
                         </div>
                         <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
                     </div>
-                    <div class="flex items-center justify-between">
+                    <div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
                         <span class="text-3xl font-bold text-gray-900 dark:text-white">£{{ $item['price'] }}</span>
-                        <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+                        <a href="#" class="text-white bg-green-700 hover:bg-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700">Add to cart</a>
                     </div>
                 </div>
             </div>

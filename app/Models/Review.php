@@ -6,19 +6,20 @@ use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Item extends Model
+class Review extends Model
 {
     use HasFactory;
     use HasUuids;
 
     protected $primaryKey = 'uid';
-    protected $table = 'items';
+    protected $table = 'reviews';
     protected $keyType = 'string';
 
     protected $fillable = [
-        'name',
+        'user_id',
+        'title',
         'description',
-        'price',
-        'imageURL',
+        'rating',
     ];
+
 }
