@@ -11,7 +11,6 @@ class Item extends Model
 
     public $incrementing = false;
 
-
     use HasFactory;
 
     protected $fillable = [
